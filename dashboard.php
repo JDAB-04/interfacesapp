@@ -20,9 +20,10 @@ $user = $_SESSION['user'];
         <h2><i class='bx bxs-invader'></i>ColorKids</h2>
         <h1>Tu camino como diseñador</h1>
         <div class="user-info" onclick="toggleMenu()">
-            <i class='bx bx-user'></i> <?php echo htmlspecialchars($user); ?>
+            <i class='bx bx-user'></i> <?php echo htmlspecialchars($user); ?> <i class='bx bx-chevron-down'></i>
             <div class="dropdown" id="userDropdown">
-                <a href="logout.php">Cerrar sesión</a>
+                <a href="dashboard.php"><i class='bx bx-home'></i>Inicio</a>
+                <a href="logout.php"><i class='bx bx-log-out'></i>Cerrar sesión</a>
             </div>
         </div>
     </header>
