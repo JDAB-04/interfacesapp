@@ -65,7 +65,7 @@ $user = $_SESSION['user'];
                 </p>
             </div>
             <div class="robot">
-                <img src="imagenes/robot2.png" alt="Robot">
+                <img src="imagenes/robot.png" alt="Robot">
             </div>
         </section>
     </main>
