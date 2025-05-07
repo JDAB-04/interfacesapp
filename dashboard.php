@@ -19,8 +19,11 @@ $user = $_SESSION['user'];
     <header class="header">
         <h2><i class='bx bxs-invader'></i>ColorKids</h2>
         <h1>Tu camino como diseñador</h1>
-        <div class="user-info">
+        <div class="user-info" onclick="toggleMenu()">
             <i class='bx bx-user'></i> <?php echo htmlspecialchars($user); ?>
+            <div class="dropdown" id="userDropdown">
+                <a href="logout.php">Cerrar sesión</a>
+            </div>
         </div>
     </header>
     <main class="dashboard">
@@ -66,4 +69,19 @@ $user = $_SESSION['user'];
         </section>
     </main>
 </body>
+    <script>
+        function toggleMenu() {
+            const dropdown = document.getElementById('userDropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Cierra el menú si haces clic fuera
+        window.addEventListener('click', function(e) {
+            const userInfo = document.querySelector('.user-info');
+            const dropdown = document.getElementById('userDropdown');
+            if (!userInfo.contains(e.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
 </html>
