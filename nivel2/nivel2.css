@@ -1,10 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;600;700&display=swap');
+
 body {
-    font-family: sans-serif;
-    background-color: #eef2f7;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../imagenes/fondoazul.png'); /* Usa la misma imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.653);
+    backdrop-filter: blur(4px);
+    font-size: 20px;
   }
   
+  .header h1{
+    font-size: 25px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+  }
+  
+  .header h2 {
+    font-size: 30px;
+    color:  #e6b60b;
+  }
+  
+  .header i{
+    margin-right: 10px;
+    color: #000;
+    width: 30px;
+  }
+  
+  .user-info {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #000;
+  }
+  
+  .user-info i {
+    margin-right: 5px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    display: none;
+    min-width: 180px;
+    z-index: 1000;
+  }
+  
+  .dropdown a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .dropdown a i {
+    margin-right: 8px;
+    font-size: 18px;
+  }
+  
+  .dropdown a:hover {
+    color: #e6b60b;
+  }  
+
+ .mensaje h1 {
+    margin-top: 40px;
+    font-size: 36px;
+    color: #000000;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: inline-block;
+ }
+
+ .mensaje p{
+    font-size: 18px;
+    font-weight: bold;
+ }
+
   #escenario {
     background-color: #fff;
     border: 2px solid #ccc;
@@ -23,6 +119,8 @@ body {
     color: white;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
   }
   
   #opciones button:hover {
