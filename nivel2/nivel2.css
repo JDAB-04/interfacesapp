@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    background-color: #eef2f7;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #escenario {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  #opciones button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0099cc;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #opciones button:hover {
+    background-color: #0077aa;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  

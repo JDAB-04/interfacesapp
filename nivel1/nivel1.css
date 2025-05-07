@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+  }
+  
+  .colors {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .color {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    cursor: grab;
+  }
+  
+  #frasco {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    background: #ffffff;
+    border: 4px dashed #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #color-mezclado {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    border: 2px solid #000;
+  }
+  
